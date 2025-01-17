@@ -8,6 +8,7 @@ echo -e "Enter your username: "
 
 read USERNAME
 
+#check username and player id
 CHECK_USERNAME=$($PSQL "SELECT username FROM players WHERE username='$USERNAME';")
 CHECK_PLAYER_ID=$($PSQL "SELECT player_id FROM players WHERE username='$USERNAME';")
 
