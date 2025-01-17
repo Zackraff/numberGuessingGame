@@ -56,6 +56,7 @@ do
 
 done
 
+#RESULTS
 ((GUESS_COUNT++))
 
 PLAYER_ID_RESULT=$($PSQL "SELECT player_id FROM players WHERE username='$USERNAME'")
